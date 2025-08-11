@@ -1,0 +1,22 @@
+# -----------------------
+# Código VBA como texto (preserva CRLF, facilita diff)
+# -----------------------
+*.bas text eol=crlf
+*.cls text eol=crlf
+*.frm text eol=crlf
+# -----------------------
+# Binários (sem diff)
+# -----------------------
+* .frx binary
+*.xlsb filter=lfs diff=lfs merge=lfs -text
+*.xlsm filter=lfs diff=lfs merge=lfs -text
+*.xlam binary
+# -----------------------
+# (Recomendado) Git LFS para binários grandes
+# Descomente as linhas abaixo SE for versionar .xlsb/.xlsm/.frx com LFS
+# e rode os comandos do passo a passo.
+# -----------------------
+# *.xlsb filter=lfs diff=lfs merge=lfs -text
+# *.xlsm filter=lfs diff=lfs merge=lfs -text
+# *.frx  filter=lfs diff=lfs merge=lfs -text
+*.frx filter=lfs diff=lfs merge=lfs -text
