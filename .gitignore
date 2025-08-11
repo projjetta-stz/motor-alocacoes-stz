@@ -1,13 +1,10 @@
-# -----------------------
-# Pastas temporárias XVBA
-# -----------------------
-logs/
+# ---- XVBA (gerados/temporários) ----
+xvba_modules/
+xvba_unit_test/
 xvba_excel_backup/
-node_modules/
+logs/
 
-# -----------------------
-# Temporários do Office/Windows
-# -----------------------
+# ---- Office/Windows temporários ----
 ~$*
 *.tmp
 *.bak
@@ -18,14 +15,11 @@ node_modules/
 Thumbs.db
 .DS_Store
 
-# -----------------------
-# VS Code
-# -----------------------
+# ---- Node/VS Code ----
+node_modules/
 .vscode/
 *.code-workspace
 
-# -----------------------
-# (Opcional) Se NÃO for versionar o workbook,
-# descomente as linhas abaixo:
+# ---- (Opcional) se NÃO quiser versionar o workbook ----
 # *.xlsb
 # *.xlsm
